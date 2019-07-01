@@ -16,10 +16,10 @@
 <body>
     <header>
         <div id="navBar">
-            <a href="index.html">Contact</a>
-            <a href="index.html">Our Process</a>
-            <a href="index.html">Services</a>
-            <a href="index.html">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#process">Our Process</a>
+            <a href="#services">Services</a>
+            <a href="#home">Home</a>
         </div>
 
         <div id="navBarBack">
@@ -27,7 +27,7 @@
         </div>
     </header>
     
-    <section class="fullHeight">
+    <section id="home" class="fullHeight">
         <div class="bigLogo">
             <img src="img/text-logo.png" alt="Automata Development"/>
         </div>            
@@ -44,18 +44,91 @@
         <div class="headerSpacer"></div>
         
         <div class="sectionGrid">            
-            <div class="item1">
+            <div class="fullCell">
                 <h1>Services</h1>
-                <p>Coming soon</p>
+            </div>
+            <div class="fullCell">
+                <p>text text text</p>
+                <h2 class="cardHeading">Design</h2>
             </div>
 
-            <div class="item2">2</div>
-            <div class="item3">3</div>  
-            <div class="item4">4</div>
-            <div class="item5">5</div>
-            <div class="item6">6</div>
-            <div class="item7">7</div>
-            <div class="item8">8</div>  
+            <div class="cardCell"><a href="#">
+                <img src="img/model.png"/>
+                <div class="cardText">
+                    <h3>CAD Models</h3>
+                    <p>3D scale models that are useful for visualizing your product and sharing it with manufacturers.  They also serve as the foundation for creating design drawings, renderings, and prototypes.</p>
+                </div>                
+            </a></div>
+            
+            <div class="cardCell"><a href="#">
+                <img src="img/drawing.png"/>
+                <div class="cardText">
+                    <h3>Design Drawings</h3>
+                    <p>2D scale drawings of your product that can be used for patents or dimensioned and sent to machine shops.</p>
+                </div>                
+            </a></div>
+            
+            <div class="cardCell"><a href="#">
+                <img src="img/rendering.png"/>
+                <div class="cardText">
+                    <h3>Renderings</h3>
+                    <p>Realistic, computer-generated images which can be used on sell sheets and websites to showcase your product</p>
+                </div>                
+            </a></div>
+            
+            <div class="fullCell">
+                <h2 class="cardHeading">Prototyping</h2>
+            </div>
+            
+            <div class="cardCell"><a href="#">
+                <img src="img/printing.jpg"/>
+                <div class="cardText">
+                    <h3>3D Printing</h3>
+                    <p>Low-cost plastic components in almost any shape</p>
+                    <p>Applications include creating visual models and prototyping parts that will be injection molded or machined.</p>
+                </div>                
+            </a></div>
+            
+            <div class="cardCell"><a href="#">
+                <img src="img/laser.jpg"/>
+                <div class="cardText">
+                    <h3>Laser Cutting</h3>
+                    <p>Flat components cut from wood or plastic</p>
+                    <p>Useful for prototyping thin components, creating engraved front panels, and making assembled enclosures</p>
+                </div>                
+            </a></div>
+            
+            <div class="cardCell"><a href="#">
+                <img src="img/cubes.png"/>
+                <div class="cardText">
+                    <h3>CNC Routering</h3>
+                    <p>Carved wood components</p>
+                    <p>A good alternative to laser cutting when thicker materials or a varying cut depth are required</p>
+                </div>
+                <div class="comingSoon">Coming Soon!</div>                
+            </a></div>
+            
+            <div class="fullCell">
+                <h2 class="cardHeading">Software</h2>
+            </div>
+            
+            <div class="cardCell"><a href="#">
+                <img src="img/web.png"/>
+                <div class="cardText">
+                    <h3>Web Design</h3>
+                    <p>info</p>
+                </div>
+                <div class="comingSoon">Coming Soon!</div>
+            </a></div>
+            
+            <div class="cardCell"><a href="#">
+                <img src="img/app.png"/>
+                <div class="cardText">
+                    <h3>App Design</h3>
+                    <p>info</p>
+                </div>
+                <div class="comingSoon">Coming Soon!</div>   
+            </a></div>
         </div>
         
         <div class="backgroundMedia">
@@ -67,17 +140,9 @@
         <div class="headerSpacer"></div>
         
         <div class="sectionGrid">            
-            <div class="item1">
-                <h1>Process</h1>
-            </div>
-
-            <div class="item2">2</div>
-            <div class="item3">3</div>  
-            <div class="item4">4</div>
-            <div class="item5">5</div>
-            <div class="item6">6</div>
-            <div class="item7">7</div>
-            <div class="item8">8</div>  
+            <div class="fullCell">
+                <h1>Our Process</h1>
+            </div>  
         </div>
         
         <div class="backgroundMedia">
@@ -89,17 +154,44 @@
         <div class="headerSpacer"></div>
         
         <div class="sectionGrid">            
-            <div class="item1">
+            <div class="fullCell">
                 <h1>Contact</h1>
             </div>
-
-            <div class="item2">2</div>
-            <div class="item3">3</div>  
-            <div class="item4">4</div>
-            <div class="item5">5</div>
-            <div class="item6">6</div>
-            <div class="item7">7</div>
-            <div class="item8">8</div>  
+            <div class="fullCell">
+                <p>Text</p>
+            </div>
+            <div class="fullCell">
+                <form>
+                    <input class="textInput" type="text" name="firstname" placeholder="First Name">
+                    <input class="textInput"  type="text" name="lastname" placeholder="Last Name">
+                    <input class="textInput"  type="text" name="company" placeholder="Company Name">
+                    <input class="textInput"  type="text" name="field" placeholder="Project Field (e.g. education, garage tools, kitchen, etc.)">
+                    
+                    <hr/>
+                    
+                    <p>I am interested in:</p>
+                    <p>
+                        <input type="checkbox" name="service1" value="CAD" checked>
+                        CAD Design
+                    </p>
+                    <p>
+                        <input type="checkbox" name="service1" value="Drawings">
+                        Design Drawings
+                    </p>
+                    <p>
+                        <input type="checkbox" name="service1" value="Rendering">
+                        Renderings
+                    </p>
+                    
+                    <hr/>
+                    
+                    <textarea name="message" rows="10" class="fullCell" placeholder="Briefely describe your project"></textarea>
+                    
+                    <div class="submitButton">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div>
         
         <div class="backgroundMedia">
