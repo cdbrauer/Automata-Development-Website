@@ -144,7 +144,33 @@
                 <h1>Our Process</h1>
             </div>
             
+            <div class="processCell">
+                <h2>Project Scope</h2>
+                <p>Send basic info</p>
+                <p>Contact with info and pricing info</p>
+            </div>
             
+            <div class="processCell">
+                <h2>Detailed Info</h2>
+                <p>Send more info</p>
+                <p>Quote</p>
+            </div>
+            
+            <div class="processCell">
+                <h2>Execution</h2>
+                <p>Email updates</p>
+                <p>Meetings</p>
+            </div>
+            
+            <div class="processCell">
+                <h2>Delivery</h2>
+                <p>Payment</p>
+                <p>Files</p>
+            </div>
+            
+            <div class="fullCell">
+                <p>Our Process</p>
+            </div>            
         </div>
         
         <div class="backgroundMedia">
@@ -160,24 +186,34 @@
                 <h1>Contact</h1>
             </div>
             <div class="fullCell">
-                <p>Text</p>
+                <p>If you are interested in any of our services, please contact us using the form below</p>
             </div>
             <div class="fullCell">
-                <form action="https://automatadevelopment.com/contactform" method="post">
-                    <div class="inputBack">
-                        <input class="textInput" type="text" name="firstname" placeholder="First Name">
-                    </div>
-                    
-                    <div class="inputBack">
-                        <input class="textInput"  type="text" name="lastname" placeholder="Last Name">
-                    </div>
-                    
-                    <div class="inputBack">
-                        <input class="textInput"  type="text" name="company" placeholder="Company Name">
-                    </div>
-                    
-                    <div class="inputBack">
-                        <input class="textInput"  type="text" name="field" placeholder="Project Field (e.g. education, garage tools, kitchen, etc.)">
+                <form action="https://automatadevelopment.com/contactform" method="post">                    
+                    <div class="textGrid">
+                        <div class="halfCellL">
+                            <div class="inputBack">
+                                <input class="textInput" type="text" name="firstname" placeholder="First Name*" required>
+                            </div>
+                        </div>
+                        
+                        <div class="halfCellR">
+                            <div class="inputBack">
+                                <input class="textInput"  type="text" name="lastname" placeholder="Last Name*" required>
+                            </div>
+                        </div>
+
+                        <div class="inputBack">
+                            <input class="textInput"  type="text" name="company" placeholder="Company Name">
+                        </div>
+
+                        <div class="inputBack">
+                            <input class="textInput"  type="email" name="company" placeholder="Email Address*" required>
+                        </div>
+
+                        <div class="inputBack">
+                            <input class="textInput"  type="text" name="field" placeholder="Project Field* (e.g. education, garage tools, kitchen, etc.)" required>
+                        </div>
                     </div>
                     
                     <hr/>
@@ -227,8 +263,10 @@
                     <hr/>
                     
                     <div class="inputBack">
-                        <textarea name="message" rows="10" class="fullCell" placeholder="Briefly describe your project"></textarea>
+                        <textarea name="message" rows="10" class="fullCell" placeholder="How can we help with your project?*" required></textarea>
                     </div>
+                    
+                    <p class="smallNote">* Required Field</p>
                     
                     <div class="submitButton">
                         <input type="submit" value="Submit">

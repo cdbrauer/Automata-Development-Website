@@ -43,6 +43,13 @@ hr {
     height: 2em;
 }
 
+.smallNote {
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+
 
 /* Nav bar ---------------------------------- */
 
@@ -163,7 +170,6 @@ section {
 }
 
 .cardCell {
-    height: 360px; /* Media query */
     position: relative;
     box-shadow:1px 2px 8px #222;
     border-radius:4px;
@@ -178,6 +184,7 @@ section {
 
 .cardCell a {
     color: black;
+    text-decoration: none;
 }
 
 .cardCell p {
@@ -188,7 +195,7 @@ section {
     width: 100%;
     padding: 10px 0;
     position: absolute;
-    top: 18%;
+    top: 6vh;
     left: 0;
     z-index: 1;
     text-align: center;
@@ -199,21 +206,12 @@ section {
 
 .cardCell img {
     width: 100%;
-    height: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 20vh;
     object-fit: cover;
 }
 
 .cardCell .cardText {
     width: 100%;
-    height: 50%;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    box-shadow:1px 2px 8px #222;
 }
 
 .cardCell h3{
@@ -241,7 +239,7 @@ form {
 
 form .inputBack {
     padding: 5px;
-    margin-bottom: 15px;
+    margin: 0 8px 16px 8px;
     background-color: #eee
 }
 
@@ -252,13 +250,30 @@ form .textInput, form select, form textarea {
     background-color: transparent;
 }
 
+form .textGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.textGrid > div {
+    grid-column: 1 / span 2;
+}
+
+.textGrid .halfCellL {
+    grid-column: 1 / span 1;
+}
+
+.textGrid .halfCellR {
+    grid-column: 2 / span 1;
+}
+
 form .checkboxGrid {
     display: grid;
     grid-template-columns: auto auto auto;
 }
-
 .submitButton {
     width: 100%;
+    margin-top: 16px;
     text-align: center;
 }
 
