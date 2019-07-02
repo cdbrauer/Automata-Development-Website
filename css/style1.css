@@ -13,24 +13,25 @@ h1 {
 
 h2 {
     font-size: 2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
 }
 
 h3 {
     font-size: 1.4em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
     font-weight: bold;
 }
 
 h4 {
     font-size: 1.2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
     font-weight: bold;
 }
 
 p {
     font-size: 1.2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
+    line-height: 1.4em;
 }
 
 hr {
@@ -55,7 +56,7 @@ hr {
 
 header {
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -64,7 +65,7 @@ header {
 #navBar {
     width: 100%;
     height: 70px; /* Media query */
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
@@ -107,13 +108,14 @@ header {
 /* Body ---------------------------------- */
 
 body {
-    
+    position: relative;
 }
 
 section {
     width: 100%;
     position: relative;
     /* border-bottom: 10px solid #222; */
+    padding-bottom: 30px;
 }
 
 .fullHeight {
@@ -143,7 +145,7 @@ section {
 }
 
 .sectionGrid > div {
-    border: 1px dashed grey;
+    /*border: 1px dashed grey;*/
 }
 
 .fullCell {
@@ -173,22 +175,30 @@ section {
     position: relative;
     box-shadow:1px 2px 8px #222;
     border-radius:4px;
-    background-color: #fff;
+    background-color: #fff/*rgba(255, 255, 255, 0.75)*/;
     overflow: hidden;
     color: black;
 }
 
 .cardCell:hover{
-    box-shadow:1px 2px 8px #888;
+    /*box-shadow:1px 2px 8px #888;*/
 }
 
 .cardCell a {
     color: black;
     text-decoration: none;
+    cursor: default;
+}
+
+.cardCell h3{
+    margin: .6em 0;
+    text-align: center;
 }
 
 .cardCell p {
     font-size: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .cardCell .comingSoon {
@@ -208,20 +218,36 @@ section {
     width: 100%;
     height: 20vh;
     object-fit: cover;
+    /*border-bottom: 2px solid #ddd;*/
 }
 
-.cardCell .cardText {
+/* Process */
+.processCell {
+    position: relative;
+    box-shadow:1px 2px 8px #222;
+    background-color: #fff/*rgba(255, 255, 255, 0.75)*/;
+    color: black;
+}
+
+.processArrow {
+    width: 30px;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    /*opacity: 0.75;*/
+    top: 0;
+    left: 100%;
+}
+
+.processCell h2{    
     width: 100%;
-}
-
-.cardCell h3{
-    margin: .6em 0;
+    margin: 15px 0 .6em 0;
     text-align: center;
 }
 
-.cardCell p {
-    margin-left: 10px;
-    margin-right: 10px;
+.processCell p {
+    font-size: 1em;
+    margin: 0 15px 15px 15px;
 }
 
 /* Form */
@@ -271,6 +297,7 @@ form .checkboxGrid {
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
 .submitButton {
     width: 100%;
     margin-top: 16px;
@@ -293,5 +320,24 @@ form .checkboxGrid {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    /* border-bottom: 10px solid #222; */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+footer .halfCellR {
+    text-align: right;
 }
 
